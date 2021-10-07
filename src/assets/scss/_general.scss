@@ -1,0 +1,14 @@
+.bg-dark {
+  background: $dark !important;
+}
+
+.center-all-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

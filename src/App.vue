@@ -1,17 +1,10 @@
 <template>
-  <div class="flex">
-    <side-container class="w-4 h-screen" />
-    <!-- <router-view /> -->
-  </div>
+  <router-view />
 </template>
 
 <script>
-import SideContainer from "@/views/SideContainer.vue";
 export default {
   name: "App",
-  components: {
-    SideContainer,
-  },
 };
 </script>
 
@@ -20,4 +13,5 @@ export default {
 @import "~primevue/resources/primevue.min.css"; //core css
 @import "~primeicons/primeicons.css"; //icons
 @import "~primeflex/primeflex.css"; //layout
+@import "~atropos/atropos.scss";
 </style>
