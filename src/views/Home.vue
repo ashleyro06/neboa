@@ -7,14 +7,17 @@
         justify-content-center
         align-items-center
         pt-3
-        sm:pt-8
+        sm:pt-6
+        px-4
         absolute
         top-0
       "
     >
       <!-- <h1 class="">Nevoa</h1> -->
-      <h3>¿Where are we going?</h3>
-      <InputText type="text" class="dark-input center-text" />
+      <h3 class="quicksand text-3xl sm:text-4xl text-center">
+        ¿Where are we going?
+      </h3>
+      <InputText type="text" class="dark-input center-text montserrat" />
       <Button class="primary-btn" label="Get me there!" @click="getMeThere" />
     </div>
     <img class="h-screen w-screen" src="@/assets/images/buildings.svg" alt="" />
