@@ -17,7 +17,11 @@
       <h3 class="quicksand text-3xl sm:text-4xl text-center">
         ¿Where are we going?
       </h3>
-      <InputText type="text" class="dark-input center-text montserrat" />
+      <InputText
+        type="text"
+        class="dark-input center-text montserrat"
+        v-model="search"
+      />
       <Button class="primary-btn" label="Get me there!" @click="getMeThere" />
     </div>
     <img class="h-screen w-screen" src="@/assets/images/buildings.svg" alt="" />
@@ -27,6 +31,7 @@
 
 <script>
 import LoadingTemplate from "@/components/LoadingTemplate.vue";
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
@@ -38,12 +43,17 @@ export default {
     LoadingTemplate,
   },
   methods: {
-    getMeThere() {
+    ...mapMutations(["SET_LOCATION", "SET_WEATHER_INFORMATION"]),
+    async getMeThere() {
       this.isLoading = true;
-      setTimeout(() => {
-        console.log("here");
-        this.isLoading = false;
-      }, 3000);
+      this.SET_LOCATION(this.search);
+      this.$store
+        .dispatch("GET_WEATHER")
+        .then((response) => {
+          this.SET_WEATHER_INFORMATION(response);
+          this.$router.push({ name: "Weather" });
+        })
+        .catch((err) => console.warn(err));
     },
   },
 };
