@@ -23,9 +23,9 @@
         align-items-center
       "
     >
-      <img
+      <custom-icon
         class="h-4rem sm:h-8rem md:h-12rem"
-        :src="require(`@/assets/images/icons/clouds.svg`)"
+        :type="weather.weather[0].main"
       />
       <h6
         class="quicksand text-xl sm:text-3xl md:text-4xl mb-0 mt-2 font-normal"
@@ -54,10 +54,11 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import CustomIcon from "@/components/CustomIcon.vue";
 import WeatherDetailContainer from "@/components/WeatherDetailContainer.vue";
 export default {
   name: "CurrentWeather",
-  components: { Navbar, WeatherDetailContainer },
+  components: { Navbar, WeatherDetailContainer, CustomIcon },
   props: {
     weather: Object,
   },
