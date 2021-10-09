@@ -13,7 +13,6 @@
         top-0
       "
     >
-      <!-- <h1 class="">Nevoa</h1> -->
       <h3 class="quicksand text-3xl sm:text-4xl text-center">
         ¿Where are we going?
       </h3>
