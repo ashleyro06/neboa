@@ -2,6 +2,14 @@
   background: $dark !important;
 }
 
+.bg-dark-200 {
+  background: $dark-200 !important;
+}
+
+.border-radius-2 {
+  border-radius: 2rem;
+}
+
 .center-all-column {
   display: flex;
   flex-direction: column;
