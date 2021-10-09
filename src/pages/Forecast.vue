@@ -5,7 +5,7 @@
       w-screen
       text-white
       background-weather-icon
-      overflow-y-scroll
+      overflow-hidden
       mt-4
       relative
       flex flex-column
