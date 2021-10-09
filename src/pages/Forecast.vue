@@ -2,6 +2,7 @@
   <div
     class="
       h-screen
+      min-h-screen
       w-screen
       text-white
       background-weather-icon
