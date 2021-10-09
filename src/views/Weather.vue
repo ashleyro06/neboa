@@ -1,7 +1,9 @@
 <template>
   <div v-if="weather" class="overflow-y-scroll">
     <CurrentWeather :weather="weather" />
-    <Forecast :weather="weather" />
+    <Forecast :weather="weather.data" v-if="weather.data" />
+
+    <ScrollTop />
   </div>
 </template>
 
