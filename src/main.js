@@ -10,8 +10,8 @@ import "primeflex/primeflex.css";
 const app = createApp(App).use(store).use(router);
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
-library.add(faSun);
+import { faSun, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+library.add(faSun, faMapMarkerAlt);
 // Import primevue and build an initial setup
 app.use(PrimeVue, {
   ripple: true,
