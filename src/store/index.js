@@ -17,6 +17,10 @@ export default createStore({
     SET_DETAILED_WEATHER(state, data) {
       state.weather = { ...state.weather, data };
     },
+    CLEAR_SEARCH(state) {
+      state.location = "";
+      state.weather = "";
+    },
   },
   actions: {
     GET_WEATHER({ state }) {

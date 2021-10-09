@@ -1,5 +1,9 @@
 <template>
-  <div class="flex flex-column">
+  <div
+    class="flex flex-column cursor-pointer"
+    v-tooltip.bottom="'Let\'s go to another place'"
+    @click="leave"
+  >
     <span class="text-xs sm:text-sm font-normal">{{ today }}</span>
     <p class="text-lg sm:text-xl font-medium my-1">
       <font-awesome-icon
@@ -16,7 +20,7 @@
 
 <script>
 import moment from "moment";
-import { mapState } from "vuex";
+import { mapMutations, mapState } from "vuex";
 export default {
   name: "CurrentData",
   computed: {
@@ -26,6 +30,13 @@ export default {
     return {
       today: null,
     };
+  },
+  methods: {
+    ...mapMutations(["CLEAR_SEARCH"]),
+    leave() {
+      this.CLEAR_SEARCH();
+      this.$router.push("/");
+    },
   },
   mounted() {
     this.today = moment().format("lll");

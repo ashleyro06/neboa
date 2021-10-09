@@ -22,6 +22,9 @@
       class="w-7 sm:w-full md:w-full lg:w-full xl:w-full px-2 my-4"
       :type="dataset.weather[0].main"
     />
+    <span class="quicksand block sm:hidden text-sm">{{
+      dataset.weather[0].main
+    }}</span>
     <span class="quicksand">{{ hourOrDay }}</span>
   </div>
 </template>

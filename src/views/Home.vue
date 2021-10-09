@@ -20,6 +20,7 @@
         type="text"
         class="dark-input center-text montserrat"
         v-model="search"
+        placeholder="My city"
       />
       <Button
         class="primary-btn"
@@ -45,10 +46,6 @@ export default {
   },
   components: {
     LoadingTemplate,
-  },
-  mounted() {
-    this.search = "London";
-    this.getMeThere();
   },
   methods: {
     ...mapMutations(["SET_LOCATION", "SET_WEATHER_INFORMATION"]),
