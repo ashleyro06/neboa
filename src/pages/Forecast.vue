@@ -6,10 +6,10 @@
       text-white
       background-weather-icon
       overflow-y-scroll
-      mb-4
       mt-4
       relative
       flex flex-column
+      justify-content-between
     "
   >
     <historical-card
@@ -18,11 +18,14 @@
       v-for="item in dataMap"
       :key="item.value"
     />
+
+    <Footer class="hidden sm:flex" />
   </div>
 </template>
 
 <script>
 import HistoricalCard from "@/components/HistoricalCard.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "Forecast",
   props: {
@@ -30,6 +33,7 @@ export default {
   },
   components: {
     HistoricalCard,
+    Footer,
   },
   data() {
     return {

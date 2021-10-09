@@ -12,7 +12,7 @@
       align-items-center
     "
   >
-    <navbar :country="weather.sys.country" :city="weather.name" />
+    <navbar />
     <div
       class="
         top-0
