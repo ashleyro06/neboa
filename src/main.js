@@ -21,5 +21,9 @@ import InputText from "primevue/inputtext";
 app.component("InputText", InputText);
 import Button from "primevue/button";
 app.component("Button", Button);
+import ScrollTop from "primevue/scrolltop";
+app.component("ScrollTop", ScrollTop);
+import Tooltip from "primevue/tooltip";
+app.directive("tooltip", Tooltip);
 
 app.mount("#app");
