@@ -3,7 +3,8 @@
     class="
       detail-container
       h-10rem
-      px-8
+      sm:px-8
+      px-4
       mb-4
       flex flex-column
       sm:flex-row
@@ -23,11 +24,11 @@
       v-for="item in dataMap"
       :key="item.value"
     >
-      <span class="my-0 sm:my-1 sm:text-xl md:text-2xl"
+      <span class="my-0 sm:my-1 text-lg sm:text-xl md:text-2xl"
         >{{ information[item.value] }}
         <span class="contrast-text">{{ item.units }}</span></span
       >
-      <h6 class="my-0 sm:my-2 sm:text-lg md:text-xl mx-2 sm:mx-0">
+      <h6 class="my-0 sm:my-2 text-sm sm:text-lg md:text-xl mx-2 sm:mx-0">
         {{ item.label }}
       </h6>
     </div>

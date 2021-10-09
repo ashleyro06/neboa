@@ -9,7 +9,8 @@
       mt-4
       relative
       flex flex-column
-      justify-content-between
+      justify-content-evenly
+      md:justify-content-between
     "
   >
     <historical-card
