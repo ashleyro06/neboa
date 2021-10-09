@@ -12,14 +12,19 @@
     "
   >
     <div class="flex flex-column">
-      <span class="text-sm font-normal">{{ today }}</span>
-      <p class="text-xl font-medium my-1">
-        <font-awesome-icon :icon="['fa', 'map-marker-alt']" class="text-2xl" />
+      <span class="text-xs sm:text-sm font-normal">{{ today }}</span>
+      <p class="text-lg sm:text-xl font-medium my-1">
+        <font-awesome-icon
+          :icon="['fa', 'map-marker-alt']"
+          class="text-lg sm:text-2xl"
+        />
         {{ city }},
-        <span class="text-lg opacity-60 font-normal"> {{ country }}</span>
+        <span class="text-base sm:text-lg opacity-60 font-normal">
+          {{ country }}</span
+        >
       </p>
     </div>
-    <img class="h-2rem" src="@/assets/images/logo-white.svg" />
+    <img class="h-1rem sm:h-2rem" src="@/assets/images/logo-white.svg" />
   </div>
 </template>
 

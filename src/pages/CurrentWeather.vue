@@ -23,13 +23,29 @@
         align-items-center
       "
     >
-      <img class="h-12rem" :src="require(`@/assets/images/icons/clouds.svg`)" />
-      <h6 class="quicksand text-4xl mb-0 mt-2 font-normal">
+      <img
+        class="h-4rem sm:h-8rem md:h-12rem"
+        :src="require(`@/assets/images/icons/clouds.svg`)"
+      />
+      <h6
+        class="quicksand text-xl sm:text-3xl md:text-4xl mb-0 mt-2 font-normal"
+      >
         {{ weather.weather[0].main }}
       </h6>
-      <h1 class="quicksand text-8xl my-2 relative">
+      <h1 class="quicksand text-5xl sm:text-7xl md:text-8xl my-2 relative">
         {{ parseInt(weather.main.temp).toFixed(0) }}
-        <span class="contrast-text font-normal absolute text-7xl top-0">º</span>
+        <span
+          class="
+            contrast-text
+            font-normal
+            absolute
+            text-4xl
+            sm:text-6xl
+            md:text-7xl
+            top-0
+          "
+          >º</span
+        >
       </h1>
     </div>
     <weather-detail-container :information="weather.main" />
@@ -60,6 +76,12 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+  .background-weather-icon {
+    background-size: cover;
   }
 }
 </style>
