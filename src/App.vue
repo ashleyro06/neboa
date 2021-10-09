@@ -13,5 +13,4 @@ export default {
 @import "~primevue/resources/primevue.min.css"; //core css
 @import "~primeicons/primeicons.css"; //icons
 @import "~primeflex/primeflex.css"; //layout
-@import "~atropos/atropos.scss";
 </style>
