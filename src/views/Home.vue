@@ -22,7 +22,12 @@
         class="dark-input center-text montserrat"
         v-model="search"
       />
-      <Button class="primary-btn" label="Get me there!" @click="getMeThere" />
+      <Button
+        class="primary-btn"
+        label="Get me there!"
+        @click="getMeThere"
+        :disabled="!search"
+      />
     </div>
     <img class="h-screen w-screen" src="@/assets/images/buildings.svg" alt="" />
   </div>
@@ -41,6 +46,10 @@ export default {
   },
   components: {
     LoadingTemplate,
+  },
+  mounted() {
+    this.search = "London";
+    this.getMeThere();
   },
   methods: {
     ...mapMutations(["SET_LOCATION", "SET_WEATHER_INFORMATION"]),

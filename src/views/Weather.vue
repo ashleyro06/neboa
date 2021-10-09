@@ -1,13 +1,17 @@
 <template>
-  <div>
-    {{ weather }}
+  <div v-if="weather" class="overflow-y-scroll">
+    <CurrentWeather :weather="weather" />
+    <Forecast :weather="weather" />
   </div>
 </template>
 
 <script>
+import CurrentWeather from "@/pages/CurrentWeather.vue";
+import Forecast from "@/pages/Forecast.vue";
 import { mapMutations, mapState } from "vuex";
 export default {
   name: "Weather",
+  components: { CurrentWeather, Forecast },
   computed: {
     ...mapState(["weather"]),
   },
@@ -22,5 +26,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
