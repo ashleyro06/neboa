@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="222" height="206.707" viewBox="0 0 222 206.707">
+  <defs>
+    <filter id="Trazado_858" x="89.821" y="22.779" width="90.8" height="157.115" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1338" data-name="Grupo 1338" transform="translate(-527 964.707)">
+    <circle id="Elipse_16" data-name="Elipse 16" cx="93.5" cy="93.5" r="93.5" transform="translate(527 -945)" fill="#fff"/>
+    <path id="Sustracción_6" data-name="Sustracción 6" d="M152.039,180.414v0a93.857,93.857,0,0,0,25.475-31.824,92.99,92.99,0,0,0,7.023-19.667,94.36,94.36,0,0,0,.566-40.266,92.987,92.987,0,0,0-14.069-33.433,93.773,93.773,0,0,0-41.137-33.875A93.03,93.03,0,0,0,112.344,15.9,94.191,94.191,0,0,0,93.5,14a93.047,93.047,0,0,0-34.534,6.584A93.1,93.1,0,0,1,117.5,0a94.189,94.189,0,0,1,18.843,1.9,92.986,92.986,0,0,1,33.433,14.069,93.773,93.773,0,0,1,33.875,41.137A93.03,93.03,0,0,1,209.1,74.657a94.187,94.187,0,0,1-2.456,47.132,93.753,93.753,0,0,1-54.605,58.626Z" transform="translate(538 -964.707)" fill="#fb7356"/>
+    <g transform="matrix(1, 0, 0, 1, 527, -964.71)" filter="url(#Trazado_858)">
+      <path id="Trazado_858-2" data-name="Trazado 858" d="M592.836-929.928c27.242.423,99.767,47.947,60.245,137.713" transform="translate(-494 959.71)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

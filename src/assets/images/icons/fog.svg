@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171" height="115.297" viewBox="0 0 171 115.297">
+  <defs>
+    <filter id="Sustracción_5" x="12.96" y="0" width="155.08" height="72.067" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_854" x="18.559" y="4.808" width="75.186" height="66.797" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1337" data-name="Grupo 1337" transform="translate(-299.644 -342.811)">
+    <g transform="matrix(1, 0, 0, 1, 299.64, 342.81)" filter="url(#Sustracción_5)">
+      <path id="Sustracción_5-2" data-name="Sustracción 5" d="M460.684,993.066H323.6a32.982,32.982,0,0,1,5.82-10.805,33.654,33.654,0,0,1,8.247-7.471,32.306,32.306,0,0,1,10.217-4.187,40.33,40.33,0,0,1,5.139-12.592,41.22,41.22,0,0,1,9.081-10.116,39.9,39.9,0,0,1,11.86-6.671A40.626,40.626,0,0,1,387.444,939a39.761,39.761,0,0,1,39.016,30.8h2.223a33.657,33.657,0,0,1,16.78,4.38,32.253,32.253,0,0,1,12.2,12.062,34,34,0,0,1,3.025,6.828Z" transform="translate(-301.64 -933)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 299.64, 342.81)" filter="url(#Trazado_854)">
+      <path id="Trazado_854-2" data-name="Trazado 854" d="M-38.821-822.082s-24.221,4.148-29.344,26.223c-.277,1.192-1,3.492-1,3.492S-88.385-789.6-93.811-776" transform="translate(123.23 834.86)" fill="none" stroke="#fff" stroke-width="4"/>
+    </g>
+    <path id="Trazado_855" data-name="Trazado 855" d="M0,0H129" transform="translate(325.644 416.486)" fill="none" stroke="#fb7356" stroke-linecap="round" stroke-width="12"/>
+    <path id="Trazado_856" data-name="Trazado 856" d="M0,0H129" transform="translate(305.644 434.297)" fill="none" stroke="#fb7356" stroke-linecap="round" stroke-width="12"/>
+    <path id="Trazado_857" data-name="Trazado 857" d="M0,0H129" transform="translate(335.644 452.108)" fill="none" stroke="#fb7356" stroke-linecap="round" stroke-width="12"/>
+  </g>
+</svg>
